@@ -1,4 +1,4 @@
-let addTask = document.getElementsByTagName('button');
+/*let addTask = document.getElementsByTagName('button');
 let inputText = document.getElementById('inputText');
 let tasks = document.getElementById('tasks');
 
@@ -21,3 +21,18 @@ function show(){
     console.log(task2);
     tasks.innerHTML = task2;
 };*/
+
+
+const addbtn = document.getElementById('addTask');
+let inputText = document.getElementById('inputText');
+let tasks = document.getElementById('tasks');
+
+function add() {
+    var task = document.createElement('li');
+    task.innerHTML = inputText.value;
+    tasks.appendChild(task);
+    inputText.value = '';
+    console.log(task);
+}
+
+addbtn.addEventListener('click', add);

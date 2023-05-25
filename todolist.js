@@ -27,9 +27,15 @@ const addbtn = document.getElementById('addTask');
 let inputText = document.getElementById('inputText');
 let tasks = document.getElementById('tasks');
 
+let defaultPara = document.createElement('p');
+defaultPara.innerText = "Add Tasks to see them here...";
+tasks.appendChild(defaultPara);
+
+
 function add() {
     var task = document.createElement('li');
     task.innerHTML = inputText.value;
+    tasks.removeChild(defaultPara);
     tasks.appendChild(task);
     inputText.value = '';
     console.log(task);

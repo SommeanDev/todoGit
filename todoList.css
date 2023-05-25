@@ -31,6 +31,7 @@ body {
 }
 
 .semi-container .task-list ul{
+    min-height: 20rem;
     list-style: decimal;
     padding: 2% 5%;
     border: 1px solid #ffcc00e4;
@@ -40,6 +41,12 @@ body {
 
 .semi-container .task-list ul li{
     padding: 2%;
+}
+
+.semi-container .task-list #tasks p{
+    font-size: 3rem;
+    opacity: 0.5;
+    text-align: center;
 }
 
 .semi-container .task-list{

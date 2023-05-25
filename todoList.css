@@ -31,12 +31,13 @@ body {
 }
 
 .semi-container .task-list ul{
+    max-height: 30rem;
     min-height: 20rem;
     list-style: decimal;
     padding: 2% 5%;
     border: 1px solid #ffcc00e4;
     border-radius: 1%;
-    overflow:visible;
+    overflow: scroll;
 }
 
 .semi-container .task-list ul li{

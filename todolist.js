@@ -35,8 +35,10 @@ tasks.appendChild(defaultPara);
 function add() {
     var task = document.createElement('li');
     task.innerHTML = inputText.value;
-    tasks.removeChild(defaultPara);
-    tasks.appendChild(task);
+    if (tasks.contains(defaultPara)) {
+        tasks.removeChild(defaultPara);
+    } // remove default
+    tasks.appendChild(task); // add task
     inputText.value = '';
     console.log(task);
 }

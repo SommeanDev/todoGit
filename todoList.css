@@ -38,10 +38,9 @@ body {
 }
 
 .semi-container .task-list ul{
-    max-height: 30rem;
+    max-height: 25rem;
     min-height: 20rem;
-    list-style: decimal;
-    padding: 2% 5%;
+    list-style: none;
     border: 1px solid #ffcc00e4;
     background-color: #005353;
     border-radius: 1%;
@@ -50,6 +49,11 @@ body {
 
 .semi-container .task-list ul li{
     padding: 2%;
+}
+
+.semi-container .task-list li:nth-child(even){
+    background-color: #008888;
+    background-size: cover;
 }
 
 .semi-container .task-list #tasks p{
@@ -81,7 +85,8 @@ body {
     height: 2rem;
 }
 
-.semi-container .add-task #addTask{
+.semi-container .add-task #addTask, 
+.semi-container .add-task #clear{
     width: 100%;
     padding: 2%;
 }
